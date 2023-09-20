@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor URL]()
-- Live Site URL: [Netlify URL]()
+- Solution URL: [FrontendMentor URL](https://www.frontendmentor.io/solutions/fylo-landing-page-using-sassscss-5mWqX4GCAn)
+- Live Site URL: [Netlify URL](https://fylo-landing-page-fe-mentor.netlify.app/)
 
 ## My process
 
