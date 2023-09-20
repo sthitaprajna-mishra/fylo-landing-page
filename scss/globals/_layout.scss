@@ -1,0 +1,388 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+// HEADER
+nav {
+  padding: 2rem 4rem 0 4rem;
+}
+nav .logo {
+  grid-column: span 8;
+}
+
+nav ul {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  font-family: var(--header-font);
+  color: var(--very-dark-blue);
+  list-style-type: none;
+}
+
+// COMMON SECTION
+.padded-section {
+  padding: 4rem 4rem 0 4rem;
+}
+
+.heading {
+  line-height: 4rem;
+  font-size: 2.4rem;
+  font-family: var(--header-font);
+}
+
+.subheading {
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.email-input {
+  grid-column: 1 / span 7;
+  padding: 0.5rem 1rem;
+}
+
+.email-input::placeholder {
+  font-family: var(--body-font);
+  color: var(--light-gray);
+}
+
+.email-submit {
+  border: 0;
+  border-radius: 2%;
+  grid-column: span 4;
+  background-color: var(--bright-blue);
+  padding: 0.8rem 1.6rem;
+  color: var(--light-grayish-blue);
+  font-family: var(--body-font);
+  box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+// HERO SECTION
+.hero-text {
+  grid-column: 1 / span 6;
+  color: var(--very-dark-blue);
+  align-self: center;
+  padding-right: 0.5rem;
+}
+
+.email-box {
+  column-gap: 1rem;
+}
+
+.hero input[type="email"] {
+  grid-column: 1 / span 7;
+}
+
+.hero-img {
+  grid-column: span 6;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.invalid-email {
+  border: 1px solid red;
+}
+
+#invalid-message {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  font-family: var(--body-font);
+  padding-top: 0.5rem;
+}
+
+// CURVED SECTION
+.middle {
+  margin-top: 8rem;
+  width: 100%;
+  display: block;
+}
+
+// MIDDLE SECTION
+.middle-section {
+  padding-bottom: 4rem;
+  background-color: var(--light-grayish-blue);
+}
+
+.middle-text {
+  grid-column: 1 / span 6;
+  color: var(--very-dark-blue);
+  // align-self: self-start;
+}
+
+.middle-section .link {
+  color: var(--moderate-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: var(--body-font);
+  column-gap: 0.5rem;
+  padding-bottom: 0.25rem;
+  width: fit-content;
+  border-bottom: 1px solid var(--moderate-cyan);
+}
+
+.middle-section .link img {
+  margin-top: 0.25rem;
+}
+
+.middle-section .link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+// MIDDLE SECTION CARD
+.card {
+  margin-top: 3rem;
+  background-color: #fff;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 2%;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.card #quotes {
+  display: block;
+}
+
+.card .author {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  font-family: var(--body-font);
+}
+
+.card .author-details .name {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.card .author-details .position {
+  font-size: 0.7rem;
+}
+
+.card .author img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.middle-img {
+  grid-column: span 6;
+}
+
+.middle-img img {
+  width: 100%;
+}
+
+// SUBSCRIPTION SECTION
+.subscription {
+  background-color: var(--desaturated-blue);
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+.subscription-text,
+.subscription-form {
+  grid-column: span 6;
+}
+
+.subscription-form {
+  margin-left: 4rem;
+  align-self: center;
+}
+
+.subscription-form input {
+  display: block;
+}
+
+.subscription-form input[type="email"] {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+#sub-invalid-message {
+  display: none;
+  font-size: 0.8rem;
+  font-family: var(--body-font);
+}
+
+#subscribe-button {
+  margin-top: 1rem;
+}
+
+// FOOTER
+footer {
+  font-family: var(--body-font);
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  font-weight: 100;
+}
+
+.footer1 {
+  grid-column: span 5;
+  padding-bottom: 4rem;
+}
+
+.footer2,
+.footer3,
+.footer4 {
+  grid-column: span 2;
+  padding-bottom: 4rem;
+}
+
+footer h4 {
+  margin: 0.5rem;
+}
+
+footer > div:not(:nth-child(1)) {
+  margin-top: 4rem;
+}
+
+footer .footer1 > img {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer .contact {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+footer .contact img {
+  width: 1rem;
+  height: 1rem;
+}
+
+footer .footer4 {
+  display: flex;
+}
+
+footer .footer4 svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+footer h4:hover,
+.footer4 div:hover svg path {
+  fill: var(--desaturated-blue);
+  color: var(--desaturated-blue);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 992px) {
+  nav .logo {
+    grid-column: span 4;
+    width: 100%;
+    align-self: center;
+  }
+
+  nav ul {
+    grid-column: span 8;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero,
+  .middle-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-text .heading {
+    line-height: 1.5rem;
+  }
+
+  .email-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .hero-text,
+  .email-box,
+  .middle-img,
+  .middle-text {
+    grid-column: 1 / span 12;
+  }
+
+  .hero-text .subheading,
+  .heading {
+    text-align: center;
+  }
+
+  .middle-section .link {
+    padding-top: 2rem;
+    margin-left: 25%;
+  }
+
+  .card {
+    margin-top: 3rem;
+
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .subscription-text {
+    grid-column: span 12;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .subscription-form {
+    grid-column: span 12;
+    margin-left: 0rem;
+  }
+
+  .subscription-form input[type="email"],
+  .subscription-form input[type="submit"] {
+    width: 100%;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3,
+  .footer4 {
+    grid-column: 1 / span 12;
+  }
+
+  footer > div:not(:nth-child(1)) {
+    margin-top: 1rem;
+  }
+
+  footer .footer4 {
+    justify-content: center;
+  }
+
+  footer .footer4 svg {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+}
